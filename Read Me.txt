@@ -1,0 +1,31 @@
+type in cmd: php artisan serve (to start server)
+to list in directory: ls is for Mac, dir is for Windows
+start work: https://www.youtube.com/watch?v=HKJDLXsTr8A&t=533s
+continue work: https://www.youtube.com/watch?v=HKJDLXsTr8A&t=4660s
+(start mysql on terminal) mysql --user=root --password=root_password
+
+email: rara@gmail.com
+password:romeo1234
+
+push to github:
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/rubanero14/laravelblog.git
+git push -u origin master
+https://github.com/rubanero14/laravelblog
+
+if error when push:
+git remote rm origin
+git remote add origin git@github.com:username/myapp.git
+
+or
+
+*Steps Upload project to Heroku*
+1. create Procfile into laravelblog master folder and inject this details into it below;
+web: vendor/bin/heroku-php-apache2 public/
+2. git init
+3. heroku create {name of the file for url}
+4. git add .
+5. git commit -m "Initial Commit"
+6. git push heroku master
