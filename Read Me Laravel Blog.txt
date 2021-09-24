@@ -1,0 +1,89 @@
+type in cmd: php artisan serve (to start server)
+to list in directory: ls is for Mac, dir is for Windows
+start work: https://www.youtube.com/watch?v=HKJDLXsTr8A&t=533s
+continue work: https://www.youtube.com/watch?v=HKJDLXsTr8A&t=4660s
+(start mysql on terminal) mysql --user=root --password=root_password
+
+test credentials:
+email: rara@gmail.com
+password:romeo1234
+
+push to github:
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/rubanero14/laravelblog.git
+git push -u origin {master/main}
+https://github.com/rubanero14/laravelblog
+
+if error when push:
+git remote rm origin
+git remote add origin git@github.com:username/myapp.git
+
+or
+
+*Steps Upload project to Heroku*
+1. create Procfile into laravelblog master folder and inject this details into it below;
+web: vendor/bin/heroku-php-apache2 public/
+2. git init
+3. heroku create {name of the file for url}
+4. git add .
+5. git commit -m "Initial Commit"
+6. git push heroku master
+
+for composer file fix:
+C:\ProgramData\ComposerSetup\bin\composer update (paste in cmd)
+
+tailwindcss installation:
+1. composer require laravel-frontend-presets/tailwindcss --dev
+2. php artisan ui tailwindcss --auth
+3. npm remove laravel-mix
+4. npm install laravel-mix --save-dev
+5. npm install cross-env --save-dev
+6. npm run watch
+
+laravel/ui fix
+1. composer install laravel/ui (if fail try below)
+2. composer require laravel/ui (if fail try below)
+3. composer update
+4. git add .
+5. git commit -m "try again"
+6. git push heroku master
+7. for database do separately (follow prosgreSQL video)
+
+if error message pops up sebastian file missing, post this in cmd as below;
+composer require sebastian/resource-operations 
+or 
+composer require --dev sebastian/resource-operations
+
+*Mac Terminal - "Please enter the commit message for your changes."*
+//You'll see this message if you git commit without a message (-m)
+// You can get out of it with two steps:
+// 1.a. Type a multi-line message to move foward with the commit.
+// 1.b. Leave blank to abort the commit.
+// 2. Hit "esc" then type ":wq" and hit enter to save your choice. Viola!
+
+//Deploying app to heroku
+https://www.youtube.com/watch?v=9meDMyAc7YE
+
+//Deploying database to heroku
+https://www.youtube.com/watch?v=skGZ8laUQco
+
+ClearDB: mysql://bfbba6bff4427f:03280f225ad4ddf@us-cdbr-east-04.cleardb.com/heroku_47e482051877164?reconnect=true
+
+Access Credentials
+Host - ec2-54-146-84-101.compute-1.amazonaws.com
+Database - dni7pd0vohoeq
+User - djntwoxsntcqsl
+Port - 5432
+Password - c70c301dc65af91feb797978002892acd98ae0676c7781eef867384c8864962d
+URI - postgres://djntwoxsntcqsl:c70c301dc65af91feb797978002892acd98ae0676c7781eef867384c8864962d@ec2-54-146-84-101.compute-1.amazonaws.com:5432/dni7pd0vohoeq
+Heroku CLI - heroku pg:psql postgresql-aerodynamic-75831 --app laravel-raj-blog
+
+
+Reference:
+https://stackoverflow.com/questions/43616290/how-can-solve-phpmyadmin-403-on-laragon
+https://stackoverflow.com/questions/21944936/error-1045-28000-access-denied-for-user-rootlocalhost-using-password-y
+https://www.youtube.com/watch?v=skGZ8laUQco
+https://www.youtube.com/watch?v=ffEtxbbzCKQ
+https://juangsalazprabowo.medium.com/how-to-deploy-a-laravel-app-into-heroku-df55efbf8e4e
